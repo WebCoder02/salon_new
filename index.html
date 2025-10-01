@@ -14,7 +14,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-M87JL688');</script>
     <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">IsBeautiful Cosmetics Webstore</title>
+    <title id="page-title">Enhance Treatement Webstore</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
@@ -502,7 +502,7 @@
                 </button>
             </div>
             <div class="footer-text">
-                Powered by <a href="https://teyzee.site" target="_blank">Teyzee Storefront (https://teyzee.site)</a>
+                Powered by <a href="https://teyzee.site" target="_blank">Teyzee Booking System (https://teyzee.site)</a>
             </div>
         </footer>
 
@@ -660,10 +660,8 @@
                     ${dish["image-1"] ? `<img class="dish-image lazy-img" data-src="${dish["image-1"]}" alt="${dish.name}">` : ''}
                 </div>
                 <div class="dish-footer">
-                    ${(typeof dish.dyn_inv === "number" && dish.dyn_inv < 1)
-                        ? `<button class="order-btn" disabled>Click on Link</button>`
-                        : `<a href="product.html?id=${dish.id}&name=${encodeURIComponent(dish.name)}&price=${dish.price}"><button disabled class="order-btn">${isAvailable ? 'Add to Order' : 'Unavailable'}</button></a>`
-                    }
+                    <button class="order-btn" disabled>Click on Link</button>
+                   
                 </div>
             </div>
         `;
@@ -911,5 +909,6 @@
     </script>
     <script src="./menu.js"></script>
 </body>
+
 
 </html>
